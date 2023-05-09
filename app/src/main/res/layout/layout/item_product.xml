@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_200"
+    android:layout_marginVertical="@dimen/space_10"
+    android:layout_marginHorizontal="@dimen/space_10"
+    android:background="@drawable/item_back">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgProductItem"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_120"
+        android:layout_marginHorizontal="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_25"
+        android:padding="@dimen/space_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSaveItem"
+        android:layout_width="@dimen/space_20"
+        android:layout_height="@dimen/space_20"
+        android:layout_margin="@dimen/space_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_save_is" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnShopItem"
+        android:layout_width="@dimen/space_20"
+        android:layout_height="@dimen/space_20"
+        android:layout_marginEnd="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_5"
+        android:background="@drawable/btn_back"
+        android:padding="@dimen/space_6"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_shop" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:text="@string/price_"
+        android:textColor="@color/main"
+        android:textSize="@dimen/size_10"
+        app:layout_constraintBottom_toBottomOf="@+id/btnShopItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnShopItem" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgStar"
+        android:layout_width="@dimen/space_10"
+        android:layout_height="@dimen/space_10"
+        android:layout_marginStart="@dimen/space_10"
+        android:tint="@color/main"
+        app:layout_constraintBottom_toBottomOf="@id/tvPriceItem"
+        app:layout_constraintStart_toEndOf="@id/tvPriceItem"
+        app:layout_constraintTop_toTopOf="@id/tvPriceItem"
+        app:srcCompat="@drawable/ic_star" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStarCountItem"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_0"
+        android:layout_marginStart="@dimen/space_5"
+        android:gravity="center"
+        android:text="@string/_4_8"
+        android:textSize="@dimen/size_8"
+        app:layout_constraintBottom_toBottomOf="@+id/imgStar"
+        app:layout_constraintStart_toEndOf="@+id/imgStar"
+        app:layout_constraintTop_toTopOf="@+id/imgStar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNameItem"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProductItem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTypeItem"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

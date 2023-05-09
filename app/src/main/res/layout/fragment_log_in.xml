@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.LogInFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/space_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sketch" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLogoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/furniture_store"
+        android:textColor="@color/main"
+        android:textSize="@dimen/size_17"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_50"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogoName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edName"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@drawable/edit_back"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="@dimen/space_10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textCapWords"
+        android:paddingHorizontal="@dimen/space_5"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edPassword"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@drawable/edit_back"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/space_10"
+        android:inputType="textPassword"
+        android:hint="@string/enter_your_password"
+        android:paddingHorizontal="@dimen/space_5"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnLogIn"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/btn_back"
+        android:gravity="center"
+        android:paddingVertical="@dimen/space_10"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginHorizontal="@dimen/space_10"
+        android:text="@string/or"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintEnd_toStartOf="@+id/viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/viewStart"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+
+    <View
+        android:id="@+id/viewStart"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/tvOr"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOr"
+        app:layout_constraintStart_toEndOf="@id/glStart"
+        app:layout_constraintTop_toTopOf="@+id/tvOr" />
+
+    <View
+        android:id="@+id/viewEnd"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tvOr"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOr"
+        app:layout_constraintEnd_toStartOf="@id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvOr" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFacebook"
+        android:layout_width="@dimen/space_30"
+        android:layout_height="@dimen/space_30"
+        android:layout_marginEnd="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_50"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/imgGoogle"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:srcCompat="@drawable/facebook" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="@dimen/space_30"
+        android:layout_height="@dimen/space_30"
+        app:layout_constraintStart_toEndOf="@id/imgFacebook"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFacebook"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/imgFacebook"
+        app:srcCompat="@drawable/google" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

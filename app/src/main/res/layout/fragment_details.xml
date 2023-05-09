@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.DetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:gravity="center"
+        android:text="@string/details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgProductDetails"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_300"
+        android:layout_marginTop="@dimen/space_10"
+        android:padding="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSave"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/imgProductDetails"
+        app:srcCompat="@drawable/ic_save_is" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvChairType"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgProductDetails"
+        tools:text="@string/app_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChairType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chair_type"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintBottom_toTopOf="@id/tvColor"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChairTypeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvChairType"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvChairType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintBottom_toTopOf="@id/tvSize"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvChairType" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvColorDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvColor"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvColor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintBottom_toTopOf="@id/tvPrice"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvColor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSizeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSize"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvSize" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintBottom_toTopOf="@+id/btnShop"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPriceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvPrice" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnShop"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginEnd="@dimen/size_20"
+        android:background="@drawable/btn_back"
+        android:gravity="center"
+        android:text="@string/shop_now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_20"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStyleShop"
+        app:layout_constraintEnd_toStartOf="@+id/tvStyleShop"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toTopOf="@+id/tvStyleShop" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tvStyleShop"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/space_20"
+        android:background="@drawable/btn_back"
+        android:padding="@dimen/space_10"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:srcCompat="@drawable/ic_shop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

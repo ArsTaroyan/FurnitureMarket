@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.ProfileFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/profile"
+        android:textSize="@dimen/size_20"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/space_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserName"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/space_25"
+        android:textSize="@dimen/size_17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgUser"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_50"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_person" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUser"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:textColor="@color/black"
+        android:text="@string/profile_amp_security"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+        app:layout_constraintEnd_toStartOf="@+id/btnUser"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="@+id/imgUser" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnUser"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUser"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvUser"
+        app:srcCompat="@drawable/ic_right" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgOrder"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_35"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgUser"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_library" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrder"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:textColor="@color/black"
+        android:text="@string/order"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgOrder"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrder"
+        app:layout_constraintStart_toEndOf="@+id/imgOrder"
+        app:layout_constraintTop_toTopOf="@+id/imgOrder" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnOrder"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOrder"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvOrder"
+        app:srcCompat="@drawable/ic_right" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgNotification"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_35"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgOrder"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_notification" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNotification"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:textColor="@color/black"
+        android:text="@string/order"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgNotification"
+        app:layout_constraintEnd_toStartOf="@+id/btnNotification"
+        app:layout_constraintStart_toEndOf="@+id/imgNotification"
+        app:layout_constraintTop_toTopOf="@+id/imgNotification" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnNotification"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNotification"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvNotification"
+        app:srcCompat="@drawable/ic_right" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgPayment"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_35"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgNotification"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_card" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPayment"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:textColor="@color/black"
+        android:text="@string/payment_methode"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPayment"
+        app:layout_constraintEnd_toStartOf="@+id/btnPayment"
+        app:layout_constraintStart_toEndOf="@+id/imgPayment"
+        app:layout_constraintTop_toTopOf="@+id/imgPayment" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnPayment"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPayment"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvPayment"
+        app:srcCompat="@drawable/ic_right" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgAbout"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_35"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgPayment"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_info" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAbout"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:textColor="@color/black"
+        android:text="@string/about"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAbout"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbout"
+        app:layout_constraintStart_toEndOf="@+id/imgAbout"
+        app:layout_constraintTop_toTopOf="@+id/imgAbout" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnAbout"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAbout"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvAbout"
+        app:srcCompat="@drawable/ic_right" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgHelp"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_35"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgAbout"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_help" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHelp"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:textColor="@color/black"
+        android:text="@string/help"
+        android:gravity="center|start"
+        android:layout_marginHorizontal="@dimen/space_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgHelp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAbout"
+        app:layout_constraintStart_toEndOf="@+id/imgHelp"
+        app:layout_constraintTop_toTopOf="@+id/imgHelp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnHelp"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHelp"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvHelp"
+        app:srcCompat="@drawable/ic_right" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgLogOut"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_35"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/imgHelp"
+        app:shapeAppearanceOverlay="@style/RoundImg"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLogOut"
+        android:layout_width="@dimen/space_0"
+        android:layout_height="@dimen/space_0"
+        android:layout_marginHorizontal="@dimen/space_10"
+        android:gravity="center|start"
+        android:text="@string/log_out"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogOut"
+        app:layout_constraintEnd_toStartOf="@+id/btnHelp"
+        app:layout_constraintStart_toEndOf="@+id/imgLogOut"
+        app:layout_constraintTop_toTopOf="@+id/imgLogOut" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnLogOut"
+        android:layout_width="@dimen/space_35"
+        android:layout_height="@dimen/space_35"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLogOut"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvLogOut"
+        app:srcCompat="@drawable/ic_right" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/space_40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/space_40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
