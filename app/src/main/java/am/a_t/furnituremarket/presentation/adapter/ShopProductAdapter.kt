@@ -46,7 +46,7 @@ class ShopProductAdapter(
                     .into(imgProductItem)
 
                 btnRemoveItem.setOnClickListener {
-                    viewModel.updateUserProduct(product.copy(productIsShop = false))
+                    viewModel.updateUserProduct(product.copy(productIsShop = false, productCount = 1))
                 }
 
                 btnAdd.setOnClickListener {
